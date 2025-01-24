@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools of the Trade - Deep Learning Frameworks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            font-size: 150%;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+        h1, h2, h3, h4 {
+            color: #333;
+            margin-top: 20px;
+        }
+        p, li {
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .image-placeholder, .interactive-placeholder, .continue-button, .vocab-section, .why-it-matters, .test-your-knowledge, .faq-section, .stop-and-think {
+            text-align: left;
+        }
+        .image-placeholder img, .interactive-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .vocab-section, .why-it-matters, .test-your-knowledge, .faq-section, .stop-and-think {
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .vocab-section {
+            background-color: #f0f8ff;
+        }
+        .vocab-section h3 {
+            color: #1e90ff;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .vocab-section h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .vocab-term {
+            font-weight: bold;
+            color: #1e90ff;
+        }
+        .why-it-matters {
+            background-color: #ffe6f0;
+        }
+        .why-it-matters h3 {
+            color: #d81b60;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .stop-and-think {
+            background-color: #e6e6ff;
+        }
+        .stop-and-think h3 {
+            color: #4b0082;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .continue-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .reveal-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #4b0082;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .test-your-knowledge {
+            background-color: #e6ffe6;
+        }
+        .test-your-knowledge h3 {
+            color: #28a745;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .test-your-knowledge h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .test-your-knowledge p {
+            margin-bottom: 15px;
+        }
+        .check-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            color: #ffffff;
+            background-color: #28a745;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+        }
+        .faq-section {
+            background-color: #fffbea;
+        }
+        .faq-section h3 {
+            color: #ffcc00;
+            font-size: 0.75em;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .faq-section h4 {
+            color: #000;
+            font-size: 0.9em;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <section id="section1">
+        <h1>Tools of the Trade - Deep Learning Frameworks</h1>
+        <div class="image-placeholder">
+            <img src="/placeholder.svg?height=300&width=600" alt="A collage of logos of popular deep learning frameworks, such as TensorFlow, PyTorch, and Keras.">
+        </div>
+        <h2>Simplifying Complexity: The Role of Frameworks</h2>
+        <p>Welcome back! Building and training neural networks, especially deep ones, can be a complex and time-consuming task. You need to define the architecture, implement the forward and backward passes, manage data efficiently, and optimize the training process. Fortunately, there are powerful tools called <strong>deep learning frameworks</strong> that simplify these tasks and make it much easier to work with neural networks.</p>
+        <div class="continue-button" onclick="showNextSection(2)">Continue</div>
+    </section>
+
+    <section id="section2">
+        <h2>What are Deep Learning Frameworks?</h2>
+        <p>Deep learning frameworks are software libraries that provide pre-built components and functionalities for building, training, and deploying neural networks. They offer a higher level of abstraction, allowing you to focus on the design and experimentation of your models rather than getting bogged down in low-level implementation details.</p>
+        <p>Think of them as toolboxes filled with specialized tools for neural network development. They provide:</p>
+        <div class="vocab-section">
+            <h3>Build Your Vocab</h3>
+            <h4 class="vocab-term">Deep Learning Framework</h4>
+            <p>A software library that provides pre-built components and functionalities for building, training, and deploying neural networks.</p>
+        </div>
+        <div class="continue-button" onclick="showNextSection(3)">Continue</div>
+    </section>
+
+    <section id="section3">
+        <ul>
+            <li><strong>Automatic differentiation:</strong> They automatically calculate the gradients needed for training, so you don't have to derive and implement the backpropagation algorithm manually.</li>
+            <li><strong>Pre-defined layers and activation functions:</strong> They offer a wide range of commonly used layers (e.g., fully connected, convolutional) and activation functions (e.g., sigmoid, ReLU), making it easy to construct different network architectures.</li>
+            <li><strong>Optimization algorithms:</strong> They provide various optimization algorithms (e.g., stochastic gradient descent, Adam) to efficiently train your models.</li>
+            <li><strong>GPU support:</strong> They allow you to leverage the power of GPUs to significantly accelerate the training process, especially for deep networks and large datasets.</li>
+            <li><strong>Data management tools:</strong> They provide tools for loading, preprocessing, and managing large datasets.</li>
+        </ul>
+        <div class="why-it-matters">
+            <h3>Why It Matters</h3>
+            <p>Deep learning frameworks are essential tools for anyone working with neural networks. They significantly reduce development time, improve efficiency, and make it easier to experiment with different models and architectures.</p>
+        </div>
+        <div class="continue-button" onclick="showNextSection(4)">Continue</div>
+    </section>
+
+    <section id="section4">
+        <p>Let's take a look at two of the most popular deep learning frameworks: <strong>TensorFlow</strong> and <strong>PyTorch</strong>.</p>
+        <div class="image-placeholder">
+            <img src="/placeholder.svg?height=300&width=600" alt="Deep Learning Frameworks - TensorFlow and PyTorch logos side-by-side with key features listed">
+        </div>
+        <p><strong>TensorFlow</strong></p>
+        <div class="vocab-section">
+            <h3>Build Your Vocab</h3>
+            <h4 class="vocab-term">TensorFlow</h4>
+            <p>An open-source deep learning framework developed by Google. It's known for its flexibility, scalability, and extensive ecosystem of tools and libraries.</p>
+        </div>
+        <p>Here are some of its key features:</p>
+        <ul>
+            <li><strong>Flexible architecture definition:</strong> Allows you to define complex network architectures using a graph-based computation model.</li>
+            <li><strong>Various hidden layer types:</strong> Supports a wide range of layer types, including fully connected, convolutional, and recurrent layers.</li>
+            <li><strong>Optimization options:</strong> Provides a variety of optimization algorithms for training.</li>
+            <li><strong>Simple syntax:</strong> Offers a relatively easy-to-use API, especially with higher-level libraries like Keras.</li>
+            <li><strong>GPU support:</strong> Enables efficient training on GPUs.</li>
+        </ul>
+        <p>Here are some useful links:</p>
+        <ul>
+            <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow Website</a></li>
+            <li><a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow Tutorials</a></li>
+        </ul>
+        <div class="continue-button" onclick="showNextSection(5)">Continue</div>
+    </section>
+
+    <section id="section5">
+        <p><strong>PyTorch</strong></p>
+        <div class="vocab-section">
+            <h3>Build Your Vocab</h3>
+            <h4 class="vocab-term">PyTorch</h4>
+            <p>An open-source deep learning framework developed by Facebook. It's known for its dynamic computation graphs, ease of use, and strong support for research.</p>
+        </div>
+        <p>Here are some of its key features:</p>
+        <ul>
+            <li><strong>Flexible architecture definition:</strong> Uses a dynamic computation graph, which allows for more flexibility in defining and modifying network architectures.</li>
+            <li><strong>Various hidden layer types:</strong> Supports a wide range of layer types.</li>
+            <li><strong>Optimization options:</strong> Provides various optimization algorithms.</li>
+            <li><strong>Simple syntax:</strong> Offers a Pythonic and intuitive API.</li>
+            <li><strong>GPU support:</strong> Enables efficient training on GPUs.</li>
+        </ul>
+        <p>Here are some useful links:</p>
+        <ul>
+            <li><a href="https://pytorch.org/" target="_blank">PyTorch Website</a></li>
+            <li><a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a></li>
+        </ul>
+        <div class="continue-button" onclick="showNextSection(6)">Continue</div>
+    </section>
+
+    <section id="section6">
+        <p>While TensorFlow and PyTorch are powerful frameworks, it's worth mentioning that the popular machine learning library <strong>scikit-learn</strong> is not well-suited for deep learning. Scikit-learn is a great tool for general-purpose machine learning, but it has limitations when it comes to building and training deep neural networks.</p>
+        <p>For instance, scikit-learn doesn't offer the same flexibility in defining complex network architectures or the same level of optimization for large-scale neural networks. It also lacks built-in support for GPUs, which are crucial for efficient deep learning training.</p>
+        <div class="stop-and-think">
+            <h3>Stop and Think</h3>
+            <h4>Why do you think specialized deep learning frameworks like TensorFlow and PyTorch are preferred over general-purpose machine learning libraries like scikit-learn for building and training deep neural networks?</h4>
+            <button class="reveal-button" onclick="revealAnswer('stop-and-think-1')">Reveal</button>
+            <p id="stop-and-think-1" style="display: none;">Deep learning frameworks offer features that are specifically tailored for neural networks, such as automatic differentiation, a wide range of layer types and activation functions, optimized training algorithms, and GPU support. These features are essential for efficiently building, training, and deploying complex deep learning models, which are often beyond the scope of general-purpose machine learning libraries.</p>
+        </div>
+        <div class="continue-button" onclick="showNextSection(7)">Continue</div>
+    </section>
+
+    <section id="section7">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <h4>Which deep learning framework is better, TensorFlow or PyTorch?</h4>
+            <p>Both TensorFlow and PyTorch are excellent frameworks, and the best choice often depends on the specific project, personal preference, and community support. TensorFlow has traditionally been favored for production and deployment, while PyTorch has gained popularity in research for its flexibility and ease of use. However, both frameworks are constantly evolving, and the lines between them are becoming increasingly blurred.</p>
+            <h4>Do I need to learn a deep learning framework to work with neural networks?</h4>
+            <p>While it's possible to implement neural networks from scratch, using a deep learning framework is highly recommended, especially for complex models and large datasets. Frameworks significantly simplify the development process, improve efficiency, and provide access to a wide range of tools and resources.</p>
+            <h4>What is Keras?</h4>
+            <p>Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow, CNTK, or Theano. It was developed with a focus on enabling fast experimentation. It is known for its simplicity and ease of use. Since TensorFlow 2.0, Keras has been tightly integrated into TensorFlow as its primary high-level API, making it even easier to use TensorFlow for deep learning.</p>
+        </div>
+        <div class="continue-button" onclick="showNextSection(8)">Continue</div>
+    </section>
+
+    <section id="section8">
+        <h2>Test Your Knowledge</h2>
+        <div class="test-your-knowledge">
+            <h3>Test Your Knowledge</h3>
+            <h4>Which of the following is NOT a key advantage of using deep learning frameworks?</h4>
+            <form id="quiz-form">
+                <label>
+                    <input type="radio" name="quiz" value="0"> Automatic differentiation
+                </label><br>
+                <label>
+                    <input type="radio" name="quiz" value="1"> Pre-defined layers and activation functions
+                </label><br>
+                <label>
+                    <input type="radio" name="quiz" value="2"> Eliminating the need for training data
+                </label><br>
+                <label>
+                    <input type="radio" name="quiz" value="3"> GPU support
+                </label><br>
+            </form>
+            <button class="check-button" onclick="checkAnswer()">Check Answer</button>
+            <p id="quiz-result" style="display: none;"></p>
+        </div>
+        <div class="continue-button" onclick="showNextSection(9)">Continue</div>
+    </section>
+
+    <section id="section9">
+        <h2>Review and Reflect</h2>
+        <p>In this lesson, we've introduced deep learning frameworks as essential tools for building, training, and deploying neural networks. We've explored the advantages they offer, such as automatic differentiation, pre-defined layers and activation functions, optimization algorithms, and GPU support. We've also briefly looked at two popular frameworks, TensorFlow and PyTorch, and discussed why specialized deep learning frameworks are preferred over general-purpose machine learning libraries like scikit-learn for deep learning tasks.</p>
+        <div class="image-placeholder">
+            <img src="/placeholder.svg?height=300&width=600" alt="A conceptual image representing deep learning frameworks as powerful tools in a toolbox, enabling the construction of complex neural network models.">
+        </div>
+        <p>In the next lesson, we'll bring everything together and apply our knowledge to a real-world example.</p>
+    </section>
+
+    <script>
+        // Show the first section initially
+        document.getElementById("section1").style.display = "block";
+        document.getElementById("section1").style.opacity = "1";
+
+        function showNextSection(nextSectionId) {
+            const currentButton = event.target;
+            const nextSection = document.getElementById("section" + nextSectionId);
+            
+            currentButton.style.display = "none";
+            
+            nextSection.style.display = "block";
+            setTimeout(() => {
+                nextSection.style.opacity = "1";
+            }, 10);
+
+            setTimeout(() => {
+                nextSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
+        }
+
+        function revealAnswer(id) {
+            const revealText = document.getElementById(id);
+            const revealButton = event.target;
+            
+            revealText.style.display = "block";
+            revealButton.style.display = "none";
+        }
+
+        function checkAnswer() {
+            const form = document.getElementById('quiz-form');
+            const result = document.getElementById('quiz-result');
+            const selectedAnswer = form.querySelector('input[name="quiz"]:checked');
+
+            if (selectedAnswer) {
+                const answerValue = selectedAnswer.value;
+                if (answerValue === "2") {
+                    result.textContent = "Correct! Deep learning frameworks do not eliminate the need for training data. Neural networks still require data to learn.";
+                    result.style.color = "green";
+                } else {
+                    result.textContent = "Incorrect. Try again!";
+                    result.style.color = "red";
+                }
+                result.style.display = "block";
+            } else {
+                result.textContent = "Please select an answer.";
+                result.style.color = "red";
+                result.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
